@@ -1,0 +1,6 @@
+{
+  "name" : "transactions-app-js",
+  "dependencies" : {
+    "bootstrap" : "latest"
+  }
+}
