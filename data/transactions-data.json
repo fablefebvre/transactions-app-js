@@ -1,0 +1,42 @@
+db.transactions.insert(
+    [
+        {
+            _id : 1,
+            amount : 1200,
+            exponent : 2
+        },
+        {
+            _id : 2,
+            amount : 1200,
+            exponent : 2
+        }
+    ]
+)
+db.operations.insert(
+    [
+        {
+            _id : 3,
+            transaction_id : 2,
+            operation_type : "CHARGEBACK"
+        },
+        {
+            _id : 4,
+            transactionId : 2,
+            operationType : "REFUND"
+        }
+    ]
+)
+db.operations.insert(
+    [
+         {
+            _id : 1,
+            transactionId : 1,
+            operationType : "CAPTURED"
+        },
+        {
+            _id : 2,
+            transactionId : 1,
+            operationType : "CREDIT"
+        }
+    ]
+)
